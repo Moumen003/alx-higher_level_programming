@@ -1,4 +1,8 @@
 #!/usr/bin/python3
 
 def remove_char_at(str, n):
-    print("{:c}{:c}".format(str[:n],str[n+1:]))
+    new=""
+    for i, c in enumerate(str):
+        if i !=n:
+            new +=c
+    return new
