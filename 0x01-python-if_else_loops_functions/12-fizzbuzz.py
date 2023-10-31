@@ -11,6 +11,6 @@ def fizzbuzz():
             print("Buzz ")
             continue
         else:
-            print(i + " ")
+            print(i," ")
             continue
          
