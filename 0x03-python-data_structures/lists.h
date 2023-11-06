@@ -2,13 +2,12 @@
 #define LISTS_H
 
 /**
- * struct listint_s - singly linked list
- * @n: integer
- * @next: points to the next node
- *
- * Description: singly linked list node structure
- * for project
+ * struct listint_s - linked list
+ * @n: int
+ * @next:  next node
  */
+
+#include <stddef.h>
 typedef struct listint_s
 {
     int n;
