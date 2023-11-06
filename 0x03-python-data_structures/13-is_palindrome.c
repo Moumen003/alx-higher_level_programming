@@ -54,7 +54,7 @@ int is_palindrome(listint_t **head)
 		return (0);
 
 	t = t->next->next;
-	malo = malo(&t);
+	malo = rev(&t);
 	middle = malo;
 
 	t = *head;
@@ -65,7 +65,7 @@ int is_palindrome(listint_t **head)
 		t = t->next;
 		malo = malo->next;
 	}
-	malo(&middle);
+	rev(&middle);
 
 	return (1);
 }
