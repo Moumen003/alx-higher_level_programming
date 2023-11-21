@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""define a class Square"""
 
 class Square:
     """define square"""
@@ -8,6 +9,6 @@ class Square:
         """constructor
         
         Args:
-            size: dfgh fg  s
+            size: ds
         """
         self.__size = size
