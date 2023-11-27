@@ -5,7 +5,7 @@
 class Rectangle:
     """rectangle ya bsaha"""
 
-    def __init(self, width=0, height=0):
+    def __init__(self, width=0, height=0):
         """new rec intialized.
 
         Args:
