@@ -73,3 +73,42 @@ class Rectangle(Base):
     def area(self):
         """Area"""
         return self.width * self.height
+
+    def display(self):
+        """print rec using #"""
+        if self.width == 0 or self.height == 0:
+            print("")
+            return
+
+        [print("") for y in range(self.y)]
+        for h in range(self.height):
+            [print(" ", end="") for x in range(self.x)]
+            [print("#", end="") for w in range(self.width)]
+            print("")
+
+    def __str__(self):
+        """Return the print."""
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
+                                                       self.x, self.y,
+                                                       self.width, self.height)
+
+    def update(self, *args, **kwargs):
+        """my args and kwargs"""
+        if args:
+            self.__update(*args)
+        elif kwargs:
+            self.__update(**kwargs)
+
+    def __update(self, id=None, width=None, height=None,
+                 x=None, y=None):
+        """this is my fun"""
+        if id is not None:
+            self.id = id
+        if width is not None:
+            self.width = width
+        if height is not None:
+            self.height = height
+        if x is not None:
+            self.x = x
+        if y is not None:
+            self.y = y
